@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+    background-color: #fcfbfb;
+    font-family: Arial, sans-serif;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: rgba(20, 30, 13, 0.7);
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: black;
+    color: #d9c2a3;
+}
+
+/* Hero Section */
+#hero-msg h1,
+#hero-msg h4 {
+    text-align: center;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+/* Buttons */
+.book,
+.join {
+    background-color: #5c946e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.book:hover,
+.join:hover {
+    background-color: #4a7d5d;
+    color: #e0e0e0;
+}
+
+/* Card Icon */
+.icon {
+    width: 80px;
+}
+
+/* Centering Sections */
+.button-box,
+main section {
+    text-align: center;
+}
+
+/* Background Container */
+#background {
+    height: 725px;
+    background-color: #ddeeea;
+}
+
+/* Message Section */
+.msg {
+    background-color: #e7e9e8;
+    padding: 20px;
+    text-align: center;
+}
+
+.msg h2 {
+    color: #333;
+}
+
+.msg p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #2e3b2c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #d9c2a3;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
