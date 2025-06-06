@@ -1,7 +1,7 @@
-/* 1. Import Google Fonts */
+/* === Google Fonts Import (adjust based on your site plan) === */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
 
-/* 2. Reset default margin and padding */
+/* === Simple Reset and Body Styles === */
 body {
     background-color: #fcfbfb;
     font-family: 'Raleway', Arial, sans-serif;
@@ -14,38 +14,31 @@ h2 {
     margin: 0;
 }
 
-/* 3. Headline font and size */
+/* === Headline Font === */
 .home-title {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
 
-/* 4. Font sizes and styling for buttons */
+/* === Font Sizes === */
 .book, .join {
-    background-color: #d9c2a3;
-    color: black;
-    text-decoration: none;
     font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
 }
 
-/* 5. Paragraph inside .msg */
 .msg p {
     font-size: 0.8em;
     padding-bottom: 15px;
 }
 
-/* 6. Section .msg style */
+/* === Line Height === */
 .msg {
     background-color: #6f7364;
     line-height: 1.5em;
     padding: 35px;
 }
 
-/* 7. Padding on other elements */
+/* === Padding === */
 #logo_link {
     padding-top: 5px;
 }
@@ -55,6 +48,10 @@ nav a {
     color: #fcfbfb;
     text-align: center;
     padding: 35px;
+}
+
+.book, .join {
+    padding: 15px 30px;
 }
 
 .icon {
@@ -70,18 +67,22 @@ footer .social img {
     padding-top: 15px;
 }
 
-/* 8. Margins for cards */
+/* === Margin === */
+.book, .join {
+    margin-top: 50px;
+    background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
 
-/* 9. Borders and box-sizing */
-.book, .join {
-    border-radius: 5px; /* already set above */
-}
-
+/* === Borders and Radius === */
 .card-img {
-    border: 10px solid #d9c2a3;
+    border: 10px solid #d9c2a3; /* Use your site color */
 }
 
 main section img {
