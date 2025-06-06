@@ -1,89 +1,305 @@
-/* 1. Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
-
-/* 2. Reset default margin and padding */
-body {
-    background-color: #fcfbfb;
-    font-family: 'Raleway', Arial, sans-serif;
-    font-size: 22px;
+/* Reset some basic elements */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-h2 {
-    margin: 0;
+/* === HEADER === */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: rgba(111, 115, 100, 0.85); /* semi-transparent olive */
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
 }
 
-/* 3. Headline font and size */
-.home-title {
-    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-    font-size: 2em;
-    margin-top: 10px;
-}
-
-/* 4. Font sizes and styling for buttons */
-.book, .join {
-    background-color: #d9c2a3;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-}
-
-/* 5. Paragraph inside .msg */
-.msg p {
-    font-size: 0.8em;
-    padding-bottom: 15px;
-}
-
-/* 6. Section .msg style */
-.msg {
-    background-color: #6f7364;
-    line-height: 1.5em;
-    padding: 35px;
-}
-
-/* 7. Padding on other elements */
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    max-width: 140px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav a {
+    color: #fff;
     text-decoration: none;
-    color: #fcfbfb;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #d9c2a3; /* light tan */
+}
+
+/* === HERO GRID === */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    position: relative;
+}
+
+#hero-box {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    z-index: -1;
+}
+
+#hero-img {
+    width: 100%;
+    display: block;
+}
+
+#hero-msg {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-top: 100px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#hero-msg h4 {
+    color: white;
+}
+
+.home-title {
+    font-size: 3rem;
+    margin-bottom: 0.2em;
+}
+
+.button-box .book {
+    background-color: #6f7364;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button-box .book:hover,
+.button-box .book:focus {
+    background-color: #d9c2a3;
+    color: #6f7364;
+}
+
+/* === MAIN GRID === */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    padding: 40px 50px;
+    position: relative;
+}
+
+/* Cards */
+.rivers-card {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    position: relative;
     text-align: center;
-    padding: 35px;
 }
 
+.camping-card {
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+    position: relative;
+    text-align: center;
+}
+
+.rapids-card {
+    grid-column: 8 / 10;
+    grid-row: 2 / 3;
+    position: relative;
+    text-align: center;
+}
+
+/* Card Images */
+.card-img {
+    width: 100%;
+    border: 10px solid #d9c2a3;
+    transition: transform 0.5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.card-img:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+/* Card Icons */
 .icon {
-    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
+/* Background and Mountains */
+#background {
+    grid-column: 1 / 11;
+    grid-row: 4 / 9;
+    background: url('images/background_texture.jpg') no-repeat center center / cover;
+    opacity: 0.1;
+    position: relative;
+    z-index: 0;
+}
+
+.mountains {
+    width: 100%;
+    grid-column: 2 / 7;
+    grid-row: 5 / 8;
+    box-shadow: 5px 5px 10px #6f7364;
+    display: block;
+    z-index: 5;
+}
+
+/* Message Section */
+.msg {
+    background-color: #6f7364;
+    padding: 35px;
+    grid-column: 6 / 10;
+    grid-row: 6 / 7;
+    box-shadow: 5px 5px 10px #6f7364;
+    color: white;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.msg h2 {
+    margin-bottom: 0.5em;
+}
+
+.msg p {
+    margin-bottom: 1em;
+}
+
+.msg .join {
+    background-color: #d9c2a3;
+    color: #6f7364;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.msg .join:hover,
+.msg .join:focus {
+    background-color: #6f7364;
+    color: #d9c2a3;
+}
+
+/* === FOOTER === */
 footer {
+    background-color: #6f7364;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
 }
 
-footer .social img {
-    padding-top: 15px;
+footer p {
+    margin: 5px 10px;
 }
 
-/* 8. Margins for cards */
-.rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* 9. Borders and box-sizing */
-.book, .join {
-    border-radius: 5px; /* already set above */
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
 }
 
-.card-img {
-    border: 10px solid #d9c2a3;
+.social a img {
+    width: 30px;
+    margin: 0 5px;
 }
 
-main section img {
-    box-sizing: border-box;
+/* === RESPONSIVE DESIGN === */
+@media screen and (max-width: 900px) {
+    #hero,
+    .home-grid {
+        display: block;
+        height: auto;
+    }
+
+    nav,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    #hero {
+        margin-top: 0;
+    }
+
+    #hero-msg {
+        margin-top: 0;
+    }
+
+    #hero-msg h4 {
+        display: none;
+    }
+
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+
+    .home-title {
+        font-size: 25px;
+    }
+
+    .rivers-card,
+    .camping-card,
+    .rapids-card {
+        margin: 50px auto;
+        width: 60%;
+    }
+
+    #background {
+        display: none;
+    }
+
+    .mountains,
+    .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        grid-column: auto !important;
+        grid-row: auto !important;
+        box-shadow: 5px 5px 10px #6f7364;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
 }
