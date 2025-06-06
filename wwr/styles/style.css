@@ -1,7 +1,7 @@
-/* === Google Fonts Import (adjust if using different fonts) === */
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
 
-/* === Simple Reset === */
+/* Reset and body settings */
 body {
     background-color: #fcfbfb;
     font-family: 'Raleway', Arial, sans-serif;
@@ -10,34 +10,19 @@ body {
     padding: 0;
 }
 
+/* Headings */
 h2 {
     margin: 0;
 }
 
-/* === Headline Font === */
+/* Home title (headline) */
 .home-title {
     font-family: 'Rock Salt', 'Bradley Hand', cursive;
     font-size: 2em;
     margin-top: 10px;
 }
 
-/* === Font Sizes === */
-.book, .join {
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    background-color: #d9c2a3;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.msg p {
-    font-size: 0.8em;
-    padding-bottom: 15px;
-}
-
-/* === Line Height === */
+/* Section text */
 .msg {
     background-color: #6f7364;
     line-height: 1.5em;
@@ -46,11 +31,17 @@ h2 {
     text-align: center;
 }
 
-/* === Padding === */
+.msg p {
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+/* Logo link */
 #logo_link {
     padding-top: 5px;
 }
 
+/* Navigation */
 nav a {
     text-decoration: none;
     color: #fcfbfb;
@@ -58,10 +49,40 @@ nav a {
     padding: 35px;
 }
 
+/* Button styles */
+.book, .join {
+    background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+/* Icon spacing */
 .icon {
     padding-top: 10px;
 }
 
+/* Card margins */
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+/* Card image borders */
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+/* Main section image sizing */
+main section img {
+    box-sizing: border-box;
+}
+
+/* Footer styles */
 footer {
     padding: 25px 50px;
     margin-top: 200px;
@@ -72,18 +93,4 @@ footer {
 
 footer .social img {
     padding-top: 15px;
-}
-
-/* === Margin for Spacing === */
-.rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
-}
-
-/* === Borders and Radius === */
-.card-img {
-    border: 10px solid #d9c2a3; /* Adjust this to match your site's color scheme */
-}
-
-main section img {
-    box-sizing: border-box;
 }
