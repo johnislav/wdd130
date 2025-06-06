@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Rock+Salt&display=swap');
 
-/* Reset browser default spacing */
 body {
   background-color: #fcfbfb;
   font-family: 'Raleway', Arial, sans-serif;
@@ -13,14 +12,12 @@ h2 {
   margin: 0;
 }
 
-/* Headline style */
 .home-title {
   font-family: 'Rock Salt', 'Bradley Hand', cursive;
   font-size: 2em;
   margin-top: 10px;
 }
 
-/* Book Now and Join Us buttons */
 .book,
 .join {
   background-color: #d9c2a3;
@@ -32,7 +29,6 @@ h2 {
   border-radius: 5px;
 }
 
-/* Message section (green background) */
 .msg {
   background-color: #6f7364;
   line-height: 1.5em;
@@ -46,12 +42,10 @@ h2 {
   padding-bottom: 15px;
 }
 
-/* Logo spacing */
 #logo_link {
   padding-top: 5px;
 }
 
-/* Navigation links */
 nav a {
   text-decoration: none;
   color: #fcfbfb;
@@ -59,19 +53,16 @@ nav a {
   padding: 35px;
 }
 
-/* Icons next to the cards */
 .icon {
   padding-top: 10px;
 }
 
-/* Card layout spacing */
 .rivers-card,
 .camping-card,
 .rapids-card {
   margin: 200px 0;
 }
 
-/* Footer styling */
 footer {
   padding: 25px 50px;
   margin-top: 200px;
@@ -84,12 +75,10 @@ footer .social img {
   padding-top: 15px;
 }
 
-/* Border for card images */
 .card-img {
   border: 10px solid #d9c2a3;
 }
 
-/* Box sizing for main content images */
 main section img {
   box-sizing: border-box;
 }
