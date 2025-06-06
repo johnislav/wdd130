@@ -1,7 +1,7 @@
-/* Importing Google Fonts */
+/* 1. Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
 
-/* Reset and body settings */
+/* 2. Reset default margin and padding */
 body {
     background-color: #fcfbfb;
     font-family: 'Raleway', Arial, sans-serif;
@@ -10,46 +10,18 @@ body {
     padding: 0;
 }
 
-/* Headings */
 h2 {
     margin: 0;
 }
 
-/* Home title (headline) */
+/* 3. Headline font and size */
 .home-title {
-    font-family: 'Rock Salt', 'Bradley Hand', cursive;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
 
-/* Section text */
-.msg {
-    background-color: #6f7364;
-    line-height: 1.5em;
-    padding: 35px;
-    color: white;
-    text-align: center;
-}
-
-.msg p {
-    font-size: 0.8em;
-    padding-bottom: 15px;
-}
-
-/* Logo link */
-#logo_link {
-    padding-top: 5px;
-}
-
-/* Navigation */
-nav a {
-    text-decoration: none;
-    color: #fcfbfb;
-    text-align: center;
-    padding: 35px;
-}
-
-/* Button styles */
+/* 4. Font sizes and styling for buttons */
 .book, .join {
     background-color: #d9c2a3;
     color: black;
@@ -60,37 +32,58 @@ nav a {
     border-radius: 5px;
 }
 
-/* Icon spacing */
+/* 5. Paragraph inside .msg */
+.msg p {
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+/* 6. Section .msg style */
+.msg {
+    background-color: #6f7364;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+/* 7. Padding on other elements */
+#logo_link {
+    padding-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fcfbfb;
+    text-align: center;
+    padding: 35px;
+}
+
 .icon {
     padding-top: 10px;
 }
 
-/* Card margins */
-.rivers-card,
-.camping-card,
-.rapids-card {
-    margin: 200px 0;
-}
-
-/* Card image borders */
-.card-img {
-    border: 10px solid #d9c2a3;
-}
-
-/* Main section image sizing */
-main section img {
-    box-sizing: border-box;
-}
-
-/* Footer styles */
 footer {
     padding: 25px 50px;
     margin-top: 200px;
-    background-color: #6f7364;
-    color: white;
-    text-align: center;
 }
 
 footer .social img {
     padding-top: 15px;
+}
+
+/* 8. Margins for cards */
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+/* 9. Borders and box-sizing */
+.book, .join {
+    border-radius: 5px; /* already set above */
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+main section img {
+    box-sizing: border-box;
 }
