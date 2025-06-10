@@ -13,24 +13,28 @@ body {
   padding: 0;
 }
 
-/* Header */
+/* Header Grid */
 header {
-  background-color: rgba(20, 30, 13, 0.7);
+  display: grid;
+  grid-template-columns: 150px auto;
   padding: 20px;
-  text-align: center;
 }
 
-/* Logo */
-.logo {
-  width: 100px;
+#logo_link {
+  justify-self: center;
+  align-self: center;
 }
 
-/* Navigation Links */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 nav a {
   color: #fcfbfb;
   text-decoration: none;
-  padding: 35px;
-  text-align: center;
+  padding: 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -39,31 +43,35 @@ nav a:hover {
   color: #d9c2a3;
 }
 
-/* Hero Section */
-#hero-msg {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #e9edc9;
+/* Hero Grid */
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
 }
 
-.home-title {
-  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-  font-size: 2em;
-  margin-top: 10px;
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+  text-align: center;
 }
 
 #hero-msg h4 {
-  font-size: 1.5em;
+  color: white;
 }
 
-.hero-img {
+#hero-img {
   width: 100%;
-  max-width: 800px;
-  margin-top: 20px;
-  border-radius: 5px;
 }
 
-/* Button */
+/* Button Box */
 .button-box {
   background-color: #e9edc9;
   padding: 10px 20px;
@@ -77,72 +85,61 @@ nav a:hover {
   background-color: #d9c2a3;
 }
 
-/* Rapids Card Section */
+/* Main Grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.card-img, .mountains {
+  width: 100%;
+}
+
+.rivers-card {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.camping-card {
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+
 .rapids-card {
-  text-align: center;
-  margin: 20px 0;
+  grid-column: 8/10;
+  grid-row: 2/3;
 }
 
-.card-img {
-  width: 100%;
-  max-width: 600px;
-  border: 10px solid #d9c2a3;
-  margin: 20px 0;
-  border-radius: 10px;
+#background {
+  grid-column: 1/11;
+  grid-row: 4/9;
 }
 
-.icon {
-  width: 80px;
-  padding-top: 10px;
+.mountains {
+  grid-column: 2/7;
+  grid-row: 5/8;
 }
 
-h2 {
-  font-size: 1.5em;
-}
-
-/* Message Section */
 .msg {
-  text-align: center;
-  background-color: #ccd5ae;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  background-color: #6f7364;
   padding: 35px;
-  line-height: 1.5em;
+  box-shadow: 5px 5px 10px #6f7364;
 }
 
-.msg h2 {
-  font-size: 2em;
+.msg h2, .msg p {
+  color: white;
 }
 
-.msg p {
-  font-size: 0.8em;
-  padding-bottom: 15px;
-}
-
-.msg-img {
-  width: 100%;
-  max-width: 800px;
-  margin: 20px 0;
-  border-radius: 5px;
-}
-
-/* Join Button */
-.join {
-  background-color: #a3c4bc;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.join:hover {
-  background-color: #d9c2a3;
-}
-
-/* Footer */
+/* Footer Layout */
 footer {
-  text-align: center;
-  background-color: #e9edc9;
+  background-color: #6f7364;
   padding: 25px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 200px;
 }
 
 footer p {
@@ -150,44 +147,66 @@ footer p {
 }
 
 footer a {
+  color: #fcfbfb;
   text-decoration: none;
-  margin: 0 10px;
 }
 
 footer a:hover {
   text-decoration: underline;
 }
 
-/* Additional styling for images */
-.card-img, .msg-img, .hero-img {
-  border-radius: 10px;
-  box-sizing: border-box;
-}
-
 /* Responsive Design */
-@media (max-width: 768px) {
-  /* Reduce padding and font size for smaller screens */
-  body {
-      font-size: 18px;
+@media screen and (max-width: 900px) {
+  #hero, .home-grid {
+      display: block;
+      height: auto;
+  }
+
+  nav, footer {
+      flex-direction: column;
   }
 
   nav a {
-      padding: 20px;
+      display: block;
+      padding: 15px;
   }
 
-  .hero-img {
-      max-width: 100%;
+  #hero {
+      margin-top: 0;
   }
 
-  .card-img {
-      max-width: 100%;
+  #hero-msg {
+      margin-top: 0;
   }
 
-  .msg-img {
-      max-width: 100%;
+  #hero-msg h4 {
+      display: none;
+  }
+
+  #hero-msg h1 {
+      color: #6f7364;
   }
 
   .home-title {
-      font-size: 1.5em;
+      font-size: 25px;
+  }
+
+  .rivers-card, .camping-card, .rapids-card {
+      margin: 50px auto;
+      width: 60%;
+  }
+
+  #background {
+      display: none;
+  }
+
+  .mountains, .msg {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+  }
+
+  footer {
+      margin-top: 25px;
   }
 }

@@ -3,61 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafting Website</title>
+    <title>Rafting Adventure</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div id="content">
         <!-- Header -->
         <header>
-            <a href="index.html" id="logo_link">
-                <img class="logo" src="images/logo.png" alt="Rafting Logo">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact</a>
+                <a href="#">Page 2</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
 
         <!-- Hero Section -->
-        <section id="hero-msg">
-            <h1 class="home-title">Welcome to the Adventure!</h1>
-            <h4>Explore the wild rivers and scenic landscapes.</h4>
-            <a href="trips.html" class="button-box">Book Now</a>
-            <img src="images/hero-image.jpg" alt="Rafting Adventure" class="hero-img">
-        </section>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Have An Adventure</h1>
+                <h4>Make Memories with Dry Oar</h4>
+                <div class="button-box">
+                    <a class="book" href="rates.html">Book Now</a>
+                </div>
+            </section>
+        </div>
 
-        <!-- Rapids Card Section -->
-        <section class="rapids-card">
-            <img class="card-img" src="images/rapids.jpg" alt="Rafting boat">
-            <img class="icon" src="images/oars.png" alt="oars icon">
-            <h2>Rapids</h2>
-            <img src="images/rapids-scene.jpg" alt="Rapids Scene" class="card-img">
-        </section>
-
-        <!-- Background Section -->
-        <div id="background"></div>
-        
-        <!-- Message Section -->
-        <section class="msg">
-            <h2>More Than Just The Thrill</h2>
-            <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
-            <img src="images/mountains.jpg" alt="Misty mountains" class="msg-img">
-            <a class='join' href="rivers.html">Join Us</a>
-        </section>
+        <!-- Main Grid Section -->
+        <main class="home-grid">
+            <section class="rivers-card">
+                <img class="card-img" src="images/rivers.jpg" alt="river in forest">
+                <img class="icon" src="images/river_icon.png" alt="river icon">
+                <h2>Rivers</h2>
+            </section>
+            <section class="camping-card">
+                <img class="card-img" src="images/camping.jpg" alt="tent in mountains">
+                <img class="icon" src="images/fire_icon.png" alt="fire icon">
+                <h2>Camping</h2>
+            </section>
+            <section class="rapids-card">
+                <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
+                <img class="icon" src="images/oars.png" alt="oars icon">
+                <h2>Rapids</h2>
+            </section>
+            <div id="background"></div>
+            <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
+            <section class="msg">
+                <h2>More Than Just The Thrill</h2>
+                <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
+                <a class="join" href="rivers.html">Join Us</a>
+            </section>
+        </main>
 
         <!-- Footer -->
         <footer>
-            <p>Follow Us:</p>
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <!-- Add more social media icons if necessary -->
+            <p>Dry Oar © 20XX - Your First and Last Name Here</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
         </footer>
     </div>
 </body>
