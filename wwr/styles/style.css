@@ -31,6 +31,7 @@ nav a {
   text-decoration: none;
   padding: 35px;
   text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
@@ -62,12 +63,14 @@ nav a:hover {
   border-radius: 5px;
 }
 
+/* Button */
 .button-box {
   background-color: #e9edc9;
   padding: 10px 20px;
   text-decoration: none;
   color: #333;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .button-box:hover {
@@ -85,6 +88,7 @@ nav a:hover {
   max-width: 600px;
   border: 10px solid #d9c2a3;
   margin: 20px 0;
+  border-radius: 10px;
 }
 
 .icon {
@@ -120,12 +124,14 @@ h2 {
   border-radius: 5px;
 }
 
+/* Join Button */
 .join {
   background-color: #a3c4bc;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .join:hover {
@@ -156,4 +162,32 @@ footer a:hover {
 .card-img, .msg-img, .hero-img {
   border-radius: 10px;
   box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Reduce padding and font size for smaller screens */
+  body {
+      font-size: 18px;
+  }
+
+  nav a {
+      padding: 20px;
+  }
+
+  .hero-img {
+      max-width: 100%;
+  }
+
+  .card-img {
+      max-width: 100%;
+  }
+
+  .msg-img {
+      max-width: 100%;
+  }
+
+  .home-title {
+      font-size: 1.5em;
+  }
 }
