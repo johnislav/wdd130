@@ -1,4 +1,4 @@
-/* Global reset */
+/* Global styles */
 body, h2 {
   margin: 0;
   padding: 0;
@@ -11,12 +11,6 @@ body {
   font-size: 22px;
   margin: 0;
   padding: 0;
-}
-
-/* Container */
-#content {
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 /* Header */
@@ -61,6 +55,13 @@ nav a:hover {
   font-size: 1.5em;
 }
 
+.hero-img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
 .button-box {
   background-color: #e9edc9;
   padding: 10px 20px;
@@ -73,7 +74,7 @@ nav a:hover {
   background-color: #d9c2a3;
 }
 
-/* Rapids Card */
+/* Rapids Card Section */
 .rapids-card {
   text-align: center;
   margin: 20px 0;
@@ -83,6 +84,7 @@ nav a:hover {
   width: 100%;
   max-width: 600px;
   border: 10px solid #d9c2a3;
+  margin: 20px 0;
 }
 
 .icon {
@@ -109,6 +111,13 @@ h2 {
 .msg p {
   font-size: 0.8em;
   padding-bottom: 15px;
+}
+
+.msg-img {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  border-radius: 5px;
 }
 
 .join {
@@ -143,25 +152,8 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Adding Borders, Box Sizing, and Padding */
-.book, .join {
-  background-color: #d9c2a3;
-  color: black;
-  font-size: 18px;
-  padding: 15px 30px;
-  margin-top: 50px;
-  border-radius: 5px;
-}
-
-.card-img {
-  border: 10px solid #d9c2a3;
-}
-
-main section img {
+/* Additional styling for images */
+.card-img, .msg-img, .hero-img {
+  border-radius: 10px;
   box-sizing: border-box;
-}
-
-/* Additional padding for footer social icons */
-footer .social img {
-  padding-top: 15px;
 }
