@@ -1,98 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Site Plan</title>
-  <link rel="stylesheet" href="styles/site-plan-rafting.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>White Water Rafting</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
   <header>
-    <h1>White Water Rafting Site Plan</h1>
-    <h2>John Merrill</h2>
-    <h2>WDD 130 - A2</h2>
-  </header>
-
-  <main>
-    <hr />
-    <h2>Overview</h2>
-    <h3>Purpose</h3>
-    <p>
-      The purpose of this site is to promote an exciting, affordable, and safe white water rafting experience for individuals and families. Our goal is to help people build lasting memories in nature.
-    </p>
-
-    <h3>Audience</h3>
-    <p>
-      Our target audience includes outdoor enthusiasts, families, and working adults looking to escape daily stress. The website works great on mobile and desktop, letting users learn about trip options and book online.
-    </p>
-
-    <hr />
-    <h2>Branding</h2>
-    <h3>Website Logo</h3>
-    <img src="https://byui-wdd.github.io/wdd130/rafting_images/dryoarlogo.png" alt="Rafting Logo" />
-
-    <hr />
-    <h2>Style Guide</h2>
-    <h3>Color Palette</h3>
-    <p>Palette URL:</p>
-    <a href="https://coolors.co/ccd5ae-e9edc9-fefae0-faedcd-d4a373"
-      target="_blank">https://coolors.co/ccd5ae-e9edc9-fefae0-faedcd-d4a373</a>
-
-    <table class="colors">
-      <tr>
-        <th>Primary</th>
-        <th>Secondary</th>
-        <th>Accent 1</th>
-        <th>Accent 2</th>
-      </tr>
-      <tr>
-        <td class="primary">#ccd5ae</td>
-        <td class="secondary">#e9edc9</td>
-        <td class="accent1">#fefae0</td>
-        <td class="accent2">#faedcd</td>
-      </tr>
-    </table>
-
-    <h3>Typography</h3>
-    <h4>Heading Font: Pinyon Script</h4>
-    <h4>Paragraph Font: Delius</h4>
-
-    <h3>Normal paragraph example</h3>
-    <p>
-      The best Whitewater Rafting in Colorado, White Water Rafting Company offers trips on the Colorado and Roaring Fork Rivers in Glenwood Springs.
-    </p>
-
-    <h3>Colored paragraph example</h3>
-    <p class="colored">
-      From relaxing floats to extreme rapids, we have something for everyone. Come experience the thrill!
-    </p>
-
-    <h3>Navigation</h3>
+    <a id="logo_link" href="index.html">
+      <img class="logo" src="https://byui-wdd.github.io/wdd130/rafting_images/logo.png" alt="Rafting Site Logo" />
+    </a>
     <nav>
       <a href="index.html">Home</a>
-      <a href="#">Trips</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </header>
 
-    <hr />
-    <h2>Site Map</h2>
-    <div class="sitemap">
-      <div class="sm-home">Home</div>
-      <div class="sm-page2">Trips</div>
-      <div class="sm-page3">Contact Us</div>
-      <div class="top">&nbsp;</div>
-      <div class="left">&nbsp;</div>
-      <div class="right">&nbsp;</div>
+  <div id="hero">
+    <div id="hero-box">
+      <img id="hero-img" src="https://byui-wdd.github.io/wdd130/rafting_images/w07_home.jpg" alt="People rafting on a river" />
     </div>
+    <section id="hero-msg">
+      <h1 class="home-title">Have An Adventure</h1>
+      <h4>Make Memories with Dry Oar</h4>
+      <div class="button-box">
+        <a class="book" href="contact.html">Book Now</a>
+      </div>
+    </section>
+  </div>
 
-    <hr />
-    <h2>Wireframes</h2>
-    <h3>Home Page</h3>
-    <img src="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" alt="home wireframe" />
+  <main class="home-grid">
+    <section class="rivers-card">
+      <img class="card-img" src="https://byui-wdd.github.io/wdd130/rafting_images/river.jpg" alt="River" />
+      <h2>Rivers</h2>
+    </section>
+    <section class="camping-card">
+      <img class="card-img" src="https://byui-wdd.github.io/wdd130/rafting_images/camping.jpg" alt="Camping" />
+      <h2>Camping</h2>
+    </section>
+    <section class="rapids-card">
+      <img class="card-img" src="https://byui-wdd.github.io/wdd130/rafting_images/rapids.jpg" alt="Rapids" />
+      <h2>Rapids</h2>
+    </section>
 
-    <h3>Trips Page</h3>
-    <img src="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_page2.png" alt="trips wireframe" />
+    <div id="background"></div>
+
+    <img class="mountains" src="https://byui-wdd.github.io/wdd130/rafting_images/mountains.jpg" alt="Beautiful mountain scenery" />
+
+    <section class="msg">
+      <h2>More Than Just the Thrill</h2>
+      <p>
+        Our river trips offer a complete outdoor experience that combines adventure with the beauty of nature. From
+        relaxing floats to challenging rapids, we've got something for everyone!
+      </p>
+      <a class="join" href="contact.html">Join Us</a>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Rafting | John Merrill</p>
+    <p><a href="site-plan.html">Site Plan</a></p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="Facebook" /></a>
+      <a href="https://twitter.com" target="_blank"><img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="Twitter" /></a>
+      <a href="https://instagram.com" target="_blank"><img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="Instagram" /></a>
+    </div>
+  </footer>
 </body>
 </html>
-
