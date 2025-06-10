@@ -1,17 +1,25 @@
-/* General Body */
-body {
-  background-color: #fcfbfb;
-  font-family: Arial, sans-serif;
+/* Global reset */
+body, h2 {
   margin: 0;
+  padding: 0;
 }
 
-/* Container for Centering */
+/* General Body Styling */
+body {
+  background-color: #fcfbfb;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
 #content {
   max-width: 1600px;
   margin: 0 auto;
 }
 
-/* Header Styling */
+/* Header */
 header {
   background-color: rgba(20, 30, 13, 0.7);
   padding: 20px;
@@ -23,12 +31,12 @@ header {
   width: 100px;
 }
 
-/* Navigation Styling */
+/* Navigation Links */
 nav a {
   color: #fcfbfb;
   text-decoration: none;
-  padding: 10px;
-  margin: 0 10px;
+  padding: 35px;
+  text-align: center;
 }
 
 nav a:hover {
@@ -36,15 +44,17 @@ nav a:hover {
   color: #d9c2a3;
 }
 
-/* Hero Section Styling */
+/* Hero Section */
 #hero-msg {
   text-align: center;
   padding: 50px 20px;
   background-color: #e9edc9;
 }
 
-#hero-msg h1 {
-  font-size: 3em;
+.home-title {
+  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 #hero-msg h4 {
@@ -63,7 +73,7 @@ nav a:hover {
   background-color: #d9c2a3;
 }
 
-/* Rapids Card Section */
+/* Rapids Card */
 .rapids-card {
   text-align: center;
   margin: 20px 0;
@@ -72,29 +82,24 @@ nav a:hover {
 .card-img {
   width: 100%;
   max-width: 600px;
+  border: 10px solid #d9c2a3;
 }
 
 .icon {
   width: 80px;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 h2 {
   font-size: 1.5em;
-  color: #333;
-}
-
-/* Background Section */
-#background {
-  height: 725px;
-  background-color: #a3c4bc;
 }
 
 /* Message Section */
 .msg {
   text-align: center;
   background-color: #ccd5ae;
-  padding: 50px 20px;
+  padding: 35px;
+  line-height: 1.5em;
 }
 
 .msg h2 {
@@ -102,7 +107,8 @@ h2 {
 }
 
 .msg p {
-  font-size: 1.2em;
+  font-size: 0.8em;
+  padding-bottom: 15px;
 }
 
 .join {
@@ -117,11 +123,11 @@ h2 {
   background-color: #d9c2a3;
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
   text-align: center;
   background-color: #e9edc9;
-  padding: 20px;
+  padding: 25px 50px;
 }
 
 footer p {
@@ -135,4 +141,27 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Adding Borders, Box Sizing, and Padding */
+.book, .join {
+  background-color: #d9c2a3;
+  color: black;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.card-img {
+  border: 10px solid #d9c2a3;
+}
+
+main section img {
+  box-sizing: border-box;
+}
+
+/* Additional padding for footer social icons */
+footer .social img {
+  padding-top: 15px;
 }
