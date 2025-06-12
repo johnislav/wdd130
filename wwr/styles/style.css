@@ -32,15 +32,20 @@ nav {
 }
 
 nav a {
-  color: #333; /* Changed to dark color for visibility */
+  color: white; /* Set the navigation links to white for visibility */
   text-decoration: none;
   padding: 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: black;
-  color: #d9c2a3; /* Light color on hover */
+  background-color: black; /* Change the background on hover */
+  color: #d9c2a3; /* Lighter color for contrast on hover */
+}
+
+/* Logo Styling */
+.logo {
+  width: 80px; /* Set the logo width to 80px as required */
 }
 
 /* Hero Grid */
