@@ -32,7 +32,7 @@ nav {
 }
 
 nav a {
-  color: #fcfbfb;
+  color: #333; /* Changed to dark color for visibility */
   text-decoration: none;
   padding: 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -40,7 +40,7 @@ nav a {
 
 nav a:hover {
   background-color: black;
-  color: #d9c2a3;
+  color: #d9c2a3; /* Slightly lighter color for contrast */
 }
 
 /* Hero Grid */
@@ -64,7 +64,7 @@ nav a:hover {
 }
 
 #hero-msg h4 {
-  color: white;
+  color: white; /* Ensure the hero message h4 is white for better visibility */
 }
 
 #hero-img {
