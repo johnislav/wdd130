@@ -40,7 +40,7 @@ nav a {
 
 nav a:hover {
   background-color: black;
-  color: #d9c2a3; /* Slightly lighter color for contrast */
+  color: #d9c2a3; /* Light color on hover */
 }
 
 /* Hero Grid */
@@ -61,6 +61,13 @@ nav a:hover {
   grid-row: 1/2;
   margin-top: 100px;
   text-align: center;
+}
+
+.home-title {
+  color: white; /* Ensure the "Have An Adventure" text is white */
+  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 #hero-msg h4 {
