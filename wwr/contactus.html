@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <a id="logo_link" href="index.html">
+      <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trips.html">Trips</a>
+      <a href="site-plan-rafting.html">Site Plan</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="feedback"></div>
+
+    <form>
+      <h2>Contact Us</h2>
+
+      <label for="user_name">Name:</label>
+      <input type="text" id="user_name" name="user_name" required>
+
+      <label for="user_email">Email:</label>
+      <input type="email" id="user_email" name="user_email" required>
+
+      <label for="user_message">Message:</label>
+      <textarea id="user_message" name="user_message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dry Oar Rafting Co. | John Merrill | WDD 130</p>
+  </footer>
+
+  <script>
+    const feedbackElement = document.getElementById('feedback');
+    const formElement = document.forms[0];
+
+    formElement.addEventListener('submit', function(e) {
+      e.preventDefault();
+      feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+      feedbackElement.style.display = "block";
+      document.body.classList.toggle('moveDown');
+    });
+  </script>
+</body>
+</html>
